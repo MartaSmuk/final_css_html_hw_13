@@ -1,0 +1,18 @@
+@use "../partials" as *;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html {
+    font-size: $font-size-med;
+    font-family: $font-family;
+    overflow-y: scroll;
+}
+
+a {
+    text-decoration: none; 
+}

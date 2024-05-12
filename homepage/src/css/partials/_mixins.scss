@@ -1,0 +1,17 @@
+@use "_variables" as *;
+
+@mixin flex-row-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+//mixins-media
+
+//size xs - mobile 
+
+@mixin size-s {
+    @media screen and (min-width: $width-xs) {
+        @content;
+    }
+}

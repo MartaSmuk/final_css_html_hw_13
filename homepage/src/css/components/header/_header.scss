@@ -1,0 +1,34 @@
+@use "../../partials" as *;
+
+header {
+    //padding: 10px 15px 10px 15px;
+}
+
+.heading {
+    position: relative;
+    z-index: 2;
+    @include flex-row-center;
+    background-color: $background-transparent; 
+    padding: $padding-header;
+    :nth-child(2) {
+        color: $basic-white;
+        font-size: $font-size-med;
+        font-weight: $font-weight-strong;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $padding-header;
+
+    &__img {
+        width: 69.8px;
+    }
+
+    &__services {
+        display: none;
+    }
+}
+
