@@ -2,17 +2,21 @@
 
 .about-bg {
     background: $gradient-supersoft;
-    // background-image: url(../../../src/imgs/symbol.png);
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // width: 100%;
-    // height: 400px;
-    // position: relative;
-    &__symbol {
+    background-attachment: fixed;
+    &__symbol:before{
+        content: '';
         position: absolute;
+        background-repeat: no-repeat;
         z-index: 1;
         width: 375px;
         height: 600px;
+        background-image: url(../../src/imgs/symbol-mob.png);
     }
+    
 }
+
+.position {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+

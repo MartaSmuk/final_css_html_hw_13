@@ -1,0 +1,69 @@
+@use "../../partials" as *;
+
+   
+.desc {
+    @include position;
+    color: $basic-white;
+    font-size: $font-size-l;
+    text-align: center;
+    font-weight: $font-weight-strong;
+    padding: 131px 15px;
+}
+
+.btn {
+    display: block;
+    margin: 33px auto 58px auto;
+}
+
+.about {
+    @include flex-column-simple;
+    gap: 28px;
+    ul {
+        @include flex-row-center;
+        gap: 10px;
+        li > a {
+            white-space: nowrap;
+            color: $secondary-gray;
+            font-size: $font-size-ml;
+            font-weight: $font-weight-strong;
+        }
+    }
+    
+    .hor-line {
+        background-color: $secondary-gray;
+        width: 100%;
+        height: 2px;
+    }
+
+    &__idea {
+        @include flex-column-simple;
+        gap: 28px;
+    }
+    
+    &__heading {
+        font-size: $font-size-sml;
+        font-weight: $font-weight-strong;
+        line-height: 24.38px;
+        color: $basic-white;
+    }
+    
+    &__desc {
+        color: $basic-white;
+        font-size: $font-size-mm;
+        line-height: 30px;
+        font-weight: $font-weight-medium;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

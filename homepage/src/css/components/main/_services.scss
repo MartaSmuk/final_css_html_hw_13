@@ -1,0 +1,18 @@
+@use "../../partials" as *;
+
+a {
+    color: $link-blue;
+    font-size: $font-size-s;
+    font-weight: $font-weight-strong;
+    //margin: 30px 0 10px 0;
+    margin: 10px 0 10px 0;
+}
+
+.services__heading {
+    font-weight: $font-weight-strong;
+    font-size: $font-size-ml;
+    line-height: 36.57px;
+    color: transparent;
+    background: $linear-gradient-red;
+    background-clip: text;
+}

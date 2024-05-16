@@ -6,6 +6,16 @@
     justify-content: space-between;
 }
 
+@mixin position {
+    position: relative;
+    z-index: 2;
+}
+
+@mixin flex-column-simple {
+    display: flex;
+    flex-direction: column;
+}
+
 //mixins-media
 
 //size xs - mobile 
