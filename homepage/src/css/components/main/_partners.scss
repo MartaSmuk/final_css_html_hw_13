@@ -1,0 +1,20 @@
+@use "../../partials" as *;
+
+.partners__heading {
+    text-transform: uppercase;
+    color: $heading-main;
+    font-weight: $font-weight-strong;
+    font-size: $font-size-s;
+    line-height: 17.07px;
+    margin: 30px 0 30px 0;
+    text-align: center;
+}
+
+.partners__items {
+    display: grid;
+    width: 100%;
+
+    img {
+        width: 100%;
+    }
+}

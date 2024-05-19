@@ -1,18 +1,33 @@
 @use "../../partials" as *;
 
-a {
-    color: $link-blue;
-    font-size: $font-size-s;
-    font-weight: $font-weight-strong;
-    //margin: 30px 0 10px 0;
-    margin: 10px 0 10px 0;
+.services__link {
+    @include link;
 }
 
 .services__heading {
-    font-weight: $font-weight-strong;
-    font-size: $font-size-ml;
-    line-height: 36.57px;
-    color: transparent;
-    background: $linear-gradient-red;
-    background-clip: text;
+    @include heading-desc;
+}
+
+.service__types {
+    display: grid;
+    row-gap: 28px;
+}
+
+.services__item{
+    :nth-child(1){
+        margin-bottom: 28px;
+    }
+    :nth-child(2) {
+        font-size: $font-size-smm;
+        font-weight: $font-weight-strong;
+        line-height: 26.82px;
+        color: $link-blue;
+        margin-bottom: 15px;
+    }
+    :nth-child(3) {
+        font-size: $font-size-m;
+        font-weight: $font-weight-medium;
+        line-height: 26px;
+        color: $basic-white;
+    }
 }

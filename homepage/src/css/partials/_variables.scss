@@ -3,21 +3,29 @@ $gradient-supersoft: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, 
 $linear-gradient-red: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
 
 $basic-white: white;
+$primary-black: #000000;
 $secondary-gray: #B3B3BA;
+$background-gray: #F5F5FA;
 $background-transparent: #F5F5FA33;
 $link-blue: #24A3FF;
+$heading-main: #323264;
+
 
 
 //fonts
+$font-size-xs: 12px;
 $font-size-s: 14px;
 $font-size-m: 16px;
 $font-size-mm: 19px;
 $font-size-sml: 20px;
+$font-size-smm: 22px;
 $font-size-ml: 30px;
 $font-size-l: 38px;
 $font-family: "Montserrat", sans-serif;
 $font-weight-medium: 400;
 $font-weight-strong: 700;
+
+$text-uppercase: uppercase;
 
 $padding-header: 10px 15px 10px 15px;
 

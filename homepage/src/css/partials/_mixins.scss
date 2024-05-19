@@ -16,6 +16,38 @@
     flex-direction: column;
 }
 
+@mixin link {
+    color: $link-blue;
+    font-size: $font-size-s;
+    font-weight: $font-weight-strong;
+    text-transform: uppercase;
+}
+
+@mixin heading-desc {
+    font-weight: $font-weight-strong;
+    font-size: $font-size-ml;
+    line-height: 36.57px;
+    color: transparent;
+    background: $linear-gradient-red;
+    background-clip: text;
+    margin: 10px 0 28px 0;
+}
+
+@mixin grid-center {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    row-gap: 28px;
+    margin-top: 28px;
+}
+
+@mixin month-font {
+    font-size: $font-size-xs;
+    color: $secondary-gray;
+    font-weight: $font-weight-strong;
+    text-transform: $text-uppercase;
+}
+
 //mixins-media
 
 //size xs - mobile 

@@ -1,0 +1,53 @@
+@use "../../partials" as *;
+
+.publication{
+    background-color: $background-gray;
+    padding-top: 28px;
+    &__link {
+        @include link;
+    }
+    
+    &__desc {
+        @include heading-desc;
+    }
+    
+    &__types{
+        @include grid-center;
+    }
+    
+    &__equity{
+        background-color: $basic-white;
+        border-radius: 8px;
+        width: 100%;
+        :nth-child(1){
+            width: 100%
+        }
+        .article {
+            display: grid;
+            gap: 15px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            :nth-child(1){
+                font-weight: $font-weight-strong;
+                font-size: $font-size-m;
+                color: $link-blue;
+            }
+            :nth-child(2){
+                @include month-font;
+            }
+            .hor-line {
+                background-color: $secondary-gray;
+                width: 100%;
+                height: 4px;
+            }
+            :nth-child(4){
+                font-weight: $font-weight-medium;
+                font-size: $font-size-s;
+                line-height: 22px;
+                color: $primary-black;
+                width: 255px;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,47 @@
+@use "../../partials" as *;
+
+.team__link {
+    @include link;
+}
+
+// .team__info{
+    
+//     //width: 100%;
+// }
+
+.team__member {
+    @include grid-center;
+    background-color: $background-gray;
+    border-radius: 12px;
+    //width: 100%;
+    :nth-child(1){
+        width: 100%;
+    }
+}
+
+.team__desc {
+    @include heading-desc;
+}
+
+.team__person {
+    font-size: $font-size-m;
+    font-weight: $font-weight-strong;
+    line-height: 19.5px;
+    color: $secondary-gray;
+    width: 255px;
+    margin-bottom: 6px;
+}
+
+.team__role {
+    font-size: $font-size-s;
+    font-weight: $font-weight-medium;
+    line-height: 22px;
+    color: $secondary-gray;
+}
+
+// .team__info {
+//     background-color: $background-gray;
+//     border-radius: 12px;;
+// }
+
+
